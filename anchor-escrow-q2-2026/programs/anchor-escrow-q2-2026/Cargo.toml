@@ -1,12 +1,12 @@
 [package]
-name = "anchor-escrow-q4"
+name = "anchor-escrow-q2-2026"
 version = "0.1.0"
 description = "Created with Anchor"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "anchor_escrow_q4"
+name = "anchor_escrow_q2_2026"
 
 [features]
 default = []

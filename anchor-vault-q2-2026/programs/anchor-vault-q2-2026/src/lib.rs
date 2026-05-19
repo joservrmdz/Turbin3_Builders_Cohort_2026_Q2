@@ -6,7 +6,7 @@ use anchor_lang::{
 declare_id!("6EpMWtU37d5LHj6YaA1EoyqkXWo1GKQP9W9b6T2k5YTN");
 
 #[program]
-pub mod anchor_vault_q4 {
+pub mod anchor_vault_q2_2026 {
     use super::*;
 
     pub fn initialize(ctx: Context<Initialize>) -> Result<()> {

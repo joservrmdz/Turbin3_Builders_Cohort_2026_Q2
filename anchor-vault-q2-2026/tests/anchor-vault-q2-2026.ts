@@ -1,13 +1,13 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { AnchorVaultQ4 } from "../target/types/anchor_vault_q4";
+import {AnchorVaultQ22026 } from "../target/types/anchor_vault_q2_2026";
 import { expect } from "chai";
 
 describe("anchor_vault_q2_2026 GRIMLOCK", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.AnchorVaultQ4 as Program<AnchorVaultQ4>;
+  const program = anchor.workspace.anchorVaultQ22026 as Program<AnchorVaultQ22026>;
   const user = provider.wallet.publicKey;
 
   // Derive PDAs

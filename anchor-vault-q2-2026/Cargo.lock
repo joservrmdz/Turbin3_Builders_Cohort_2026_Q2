@@ -222,7 +222,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "anchor-vault-q4"
+name = "anchor-vault-q2-2026"
 version = "0.1.0"
 dependencies = [
  "anchor-lang",

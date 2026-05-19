@@ -1,12 +1,12 @@
 [package]
-name = "anchor-vault-q4"
+name = "anchor-vault-q2-2026"
 version = "0.1.0"
 description = "Created with Anchor"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib", "lib"]
-name = "anchor_vault_q4"
+name = "anchor_vault_q2_2026"
 
 [features]
 default = []

@@ -1,14 +1,14 @@
 import * as anchor from "@coral-xyz/anchor";
 import { Program } from "@coral-xyz/anchor";
-import { AnchorEscrowQ4 } from "../target/types/anchor_escrow_q4";
+import { AnchorEscrowQ22026 } from "../target/types/anchor_escrow_q2_2026";
 import { expect } from "chai";
 import { getAssociatedTokenAddressSync, createAssociatedTokenAccountInstruction, createMint, mintTo, TOKEN_PROGRAM_ID, ASSOCIATED_TOKEN_PROGRAM_ID } from "@solana/spl-token";
 
-describe("anchor_escrow_q4", () => {
+describe("anchor_escrow_q2-2026 GRIMLOCK21_", () => {
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
 
-  const program = anchor.workspace.AnchorEscrowQ4 as Program<AnchorEscrowQ4>;
+  const program = anchor.workspace.anchorEscrowQ22026 as Program<AnchorEscrowQ22026>;
 
   const maker = provider.wallet.publicKey;
   const taker = anchor.web3.Keypair.generate();
