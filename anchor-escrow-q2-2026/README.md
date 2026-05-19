@@ -18,25 +18,31 @@
 
 ## Instruction Set
 
-### 1. `make(seed: u64, deposit: u64, receive: u64)`
+### 1. `Make`
+
 Initializes the `Escrow` state and transfers `deposit` tokens from the maker's ATA to the `vault` ATA.
 
-### 2. `take`
+### 2. `Take`
+
 Taker deposits the requested `Mint B` tokens to the `maker_ata_b`, receives the locked `Mint A` tokens from the `vault`, and closes the vault and escrow state accounts.
-### 3. `refund`
-Returns the locked `Mint A` tokens in the `vault` to the `maker_ata_a` and closes both the vault and escrow state accounts.
----
+
+### 3. `Refund`
+
+## Returns the locked `Mint A` tokens in the `vault` to the `maker_ata_a` and closes both the vault and escrow state accounts.
 
 ## Testing
 
 Integration tests are implemented in [tests/anchor-escrow-q2-2026.ts](./tests/anchor-escrow-q2-2026.ts).
 
 ### Test Cases Covered:
+
 1.  **Makes and refunds the escrow**: Checks that the maker can initialize an escrow and successfully refund/cancel it, verifying all accounts close and tokens are returned.
 2.  **Makes and takes the escrow**: Checks the successful path where the taker fulfills the escrow, verifying that the taker receives Mint A, the maker receives Mint B, and the program closes all escrow-related accounts.
 
 ### Run Tests:
+
 Ensure you are in the project folder and run:
+
 ```bash
 anchor build
 yarn install
